@@ -43,7 +43,7 @@ A screenshot showing the newsletter sign-up form on desktop devices with the ful
 
 A screenshot showing the responsive design optimized for mobile devices.
 
-![Mobile Preview](./docs/mobile-preview.jpeg)
+<img src="./docs/mobile-preview.jpeg" alt="Mobile Preview" width="300" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 
 
 ### Links
