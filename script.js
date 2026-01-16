@@ -8,7 +8,7 @@ const userEmailSpan = document.getElementById('user-email');
 const dismissBtn = document.getElementById('dismiss-btn');
 
 // Email validation regex
-const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/;
+const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z]+\.[A-Za-z]+$/;
 
 // Form submission handler
 form.addEventListener('submit', (e) => {
