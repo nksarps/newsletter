@@ -1,4 +1,4 @@
-# Newsletter sign-up form with success message solution
+# Newsletter Sign Up Form
 
 A responsive newsletter sign-up form featuring email validation, success messaging, and mobile-first design. This project demonstrates modern web development practices with clean HTML, CSS, and vanilla JavaScript.
 
