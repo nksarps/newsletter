@@ -1,17 +1,18 @@
-// Get DOM elements
+// Get DOM elements (getting references to necessary HTML elements by their IDs)
 const form = document.getElementById('newsletter-form');
 const emailInput = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
 const signupContainer = document.getElementById('signup-container');
 const successContainer = document.getElementById('success-container');
-const userEmailSpan = document.getElementById('user-email');
+const userEmailSpan = document.getElementById('user-email'); // to display user email in success message
 const dismissBtn = document.getElementById('dismiss-btn');
 
 // Email validation regex
 const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z]+\.[A-Za-z]+$/;
 
-// Form submission handler
+// Form submission handler (listens for the submit event on the newsletter form)
 form.addEventListener('submit', (e) => {
+    // prevent default form reload behavior when submitting
     e.preventDefault();
     
     const email = emailInput.value.trim();
@@ -23,14 +24,15 @@ form.addEventListener('submit', (e) => {
     }
     
     // If valid, show success message
-    hideError();
+    hideError(); // hide any existing errors if the email is valid
     showSuccessMessage(email);
 });
 
 // Input event to remove error state when user starts typing
+// If user previously tried to submit an invalid email
 emailInput.addEventListener('input', () => {
     if (emailInput.classList.contains('error')) {
-        hideError();
+        hideError(); // remove error state when user starts typing
     }
 });
 
